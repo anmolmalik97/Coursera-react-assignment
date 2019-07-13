@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Control, LocalForm, Errors } from "react-redux-form";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardImg,
@@ -15,8 +17,6 @@ import {
   Col,
   Label
 } from "reactstrap";
-import { Control, LocalForm, Errors } from "react-redux-form";
-import { Link } from "react-router-dom";
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || val.length <= len;
